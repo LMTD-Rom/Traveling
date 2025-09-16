@@ -1,0 +1,189 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+/* Hero Section with Shape Background */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.hero-text {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+/* Destinasi */
+.destinasi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 120px 30px 30px; /* padding top lebih besar karena header fixed */
+}
+
+.destinasi article {
+  background: linear-gradient(135deg, rgba(0,180,216,0.15), rgba(144,224,239,0.15));
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(4px); /* efek kaca buram */
+}
+
+.destinasi article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, rgba(0,180,216,0.25), rgba(144,224,239,0.25));
+}
+
+.destinasi img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.destinasi h3 {
+  margin: 10px;
+}
+
+.destinasi p {
+  margin: 0 10px 15px;
+  color: #555;
+}
+
+/* Kontak */
+.kontak {
+  padding: 30px;
+  background: #e9ecef;
+  text-align: center;
+}
+
+.sosmed-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.btn.ig {
+  border-color: #e1306c;
+}
+
+.btn.wa {
+  border-color: #25D366;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.destinasi .card {
+    display: block;
+    background: linear-gradient(135deg, rgba(0,180,216,0.15), rgba(144,224,239,0.15));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destinasi .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.destinasi .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destinasi .card h3 {
+    margin: 10px;
+}
+
+.destinasi .card p {
+    margin: 0 10px 15px;
+    color: #555;
+}
